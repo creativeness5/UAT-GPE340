@@ -23,7 +23,11 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         RotateToMousePosition(); 
-        //mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, target.position, pawn.speed);
+        
+        Vector3 newTarget = pawn.transform.position; //declaring player's position
+        newTarget.y = 10f; //this sets that the position will have a y of 10
+        mainCamera.transform.position = Vector3.MoveTowards(mainCamera.transform.position, newTarget, pawn.speed);
+        //this makes the camera follow the player
     }
 
     void RotateToMousePosition()

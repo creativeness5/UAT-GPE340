@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
         //Pass inputs onto the pawn
         pawn.Move(new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")));
 
-        
+        if (Input.GetKey("Ctrl"))
+        {
+            pawn.Crouch(new Vector3());
+        }
     }
 }

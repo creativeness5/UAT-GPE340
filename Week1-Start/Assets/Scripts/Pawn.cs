@@ -24,10 +24,12 @@ public class Pawn : MonoBehaviour
     {
         anim.SetFloat("Horizontal", input.x * speed);
         anim.SetFloat("Vertical", input.z * speed);
+        
     }
 
     public void Crouch(Vector3 input)
     {
+
         anim.SetBool("Crouch", false);
     }
 }
