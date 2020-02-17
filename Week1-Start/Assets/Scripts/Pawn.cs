@@ -8,6 +8,9 @@ public class Pawn : MonoBehaviour
     public Animator anim;
     public float speed;
 
+    public CapsuleCollider capscol_top;
+    public CapsuleCollider capscol_bot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +30,10 @@ public class Pawn : MonoBehaviour
         
     }
 
-    public void Crouch(Vector3 input)
+    public void Crouch(bool isCrouching)
     {
 
-        anim.SetBool("Crouch", false);
+        anim.SetBool("Crouch", isCrouching);
     }
 }
 

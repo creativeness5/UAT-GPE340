@@ -19,9 +19,18 @@ public class PlayerController : MonoBehaviour
         //Pass inputs onto the pawn
         pawn.Move(new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")));
 
-        if (Input.GetKey("Ctrl"))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
-            pawn.Crouch(new Vector3());
+            pawn.Crouch(true);
+
+            pawn.capscol_top.enabled = false;
+        }
+
+        else
+        {
+            pawn.Crouch(false);
+
+            pawn.capscol_top.enabled = true;
         }
     }
 }
