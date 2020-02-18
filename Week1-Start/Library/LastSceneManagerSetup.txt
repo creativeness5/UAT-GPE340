@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Checkpoint1.unity
+- path: Assets/Scenes/Checkpoint2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

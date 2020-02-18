@@ -7,9 +7,11 @@ public class Pawn : MonoBehaviour
 
     public Animator anim;
     public float speed;
+    public Health healthScript;
 
     public CapsuleCollider capscol_top;
     public CapsuleCollider capscol_bot;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,11 @@ public class Pawn : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AddHealth(float healthToAdd)
+    {
+        //healthScript._currHealth += healthToAdd;
     }
 
     public void Move(Vector3 input)
