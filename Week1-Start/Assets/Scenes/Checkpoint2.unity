@@ -853,6 +853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   speed: 8
+  healthScript: {fileID: 0}
   capscol_top: {fileID: 1246371899}
   capscol_bot: {fileID: 1246371900}
 --- !u!114 &1246371896
